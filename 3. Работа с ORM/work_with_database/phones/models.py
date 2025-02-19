@@ -12,6 +12,5 @@ class Phone(models.Model):
     slug = models.SlugField(null=False, unique=True)
 
     def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.name)
-        return super().save(*args, **kwargs) - models
+        self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
