@@ -57,3 +57,4 @@ manage.py migrate
 ```bash
 python manage.py runserver
 ```
+# Django_CRUD-_in_DRF
